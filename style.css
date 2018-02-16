@@ -1,10 +1,54 @@
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/************ TABLE OF CONTENTS ***************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/************ 1)
+/************ 2) NAV BAR    *******************/
+/************ 2) Image logo *******************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+
 body{
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
+#social-contact-bar{
+    position: relative;
+}
 
+
+/**********************************************/
+/* 2) NAV BAR NAVIGATION  *********************/
+/**********************************************/
+
+nav{
+    position: absolute;
+    top: 0;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.ontop {
+  position: absolute;
+  margin-top: -2%;
+  right: 0;
+  left: 0;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
 
 #social-contact-bar{
     background-color: red;
@@ -13,23 +57,17 @@ body{
 }
 
 
-#navigation-bar{
-    width: 80%;
-    display: block;
-    background-color: #eee; /* remove */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .color-white{
     color:white;
 }
 
-#image-holder{
-    background: url('images/construction.JPG');
-    width: 100%;
-    height: 400px;
-    background-size: cover;
+
+/**********************************************/
+/* 3) IMAGE LOGO (BELOW NAV)  *******************/
+/**********************************************/
+
+#image-logo-bar{
+
 }
 
 #logo-text{
@@ -41,16 +79,15 @@ body{
     background-color: #8d8d8d;
 }
 
-/**********************************************/
-/* IMAAGE LOGO (BELOW NAV)  */
-/**********************************************/
-
-#image-logo-bar{
-
+#image-holder{
+    background: url('images/construction.JPG');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
 }
 
 /**********************************************/
-/* SOMETHING  */
+/* BOTTOM NAVIGATION  */
 /**********************************************/
 
 #bottom-navigation{
@@ -152,8 +189,22 @@ p{
     font-size: 1em;
 }
 
+ul{
+    padding-left: 5px;
+}
+
 ul li{
     list-style:none;
+}
+
+#hr-break{
+    margin: 0;
+    border-top: 2px solid rgba(0,0,0, .1);
+}
+
+#googleMap{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
 }
 
 .margin-top{
@@ -172,4 +223,14 @@ ul li{
 .text-align-center{
     text-align: center;
 }
+
+.text-left{
+    text-align: left;
+}
+
+.box-shadow{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/********************/
 
