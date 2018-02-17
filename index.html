@@ -24,57 +24,12 @@
 
     <body ng-app="ngjmf" ng-controller="jmfcontroller">
 
-        <h1> {{ hello }} </h1>
 
-
-        <div id="social-contact-bar">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="service-box">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i class="far fa-clock color-white text-left"> </i>
-                                        </div>
-                                        <div class="col-md-10 text-left">
-                                            jgigrjgodjgo
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <i class="far fa-clock color-white text-left">test row 2 </i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="service-box">
-                                    <div class="text-left"> BLAHHH </div>
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Service 2</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="service-box">
-                                    <div class="text-left"> BLAHHH </div>
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Service 2</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="container-page">
+            <div ng-include="'topsocialbar.html'"> </div>
+            <div ng-view></div>
+<!--            <div ng-include="'topsocialbar.html'"> </div> footer here -->
         </div>
-
 
         <div class="container ontop">
             <div class="row">
