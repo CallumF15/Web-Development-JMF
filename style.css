@@ -51,9 +51,9 @@ nav{
 /**********************************************/
 
 #social-contact-bar{
-    background-color: red;
+    background-color: #676767;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
 }
 
 
@@ -121,13 +121,13 @@ nav{
     background-color: #aaaaaa;
 }
 
-.blah{
-    width: 300px; /* this is breaking things on small responsive */
+.service-box{
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
 
-.blah:hover{
+.service-box:hover{
     background-color: blue;
     opacity: .9;
 }

@@ -1,7 +1,31 @@
 /* MEDIA QUERIES CSS */
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+
+/* smallest phone width */
+@media (min-width: 320px) {
+    .box-holder{
+        margin-top: 10px;
+    }
+
+    .service-box{
+        width: 100%;
+    }
+}
+
+
+/* */
+@media (min-width: 480) {
     .container{
 
+    }
+
+    .service-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 800px){
+    #image-holder{
+        height: 500px;
     }
 }
