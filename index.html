@@ -8,19 +8,25 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="MQstyle.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="jmfcontroller.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-         <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-regular.js"></script>
-         <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-solid.js"></script>
-         <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-brands.js"></script>
-         <script src="/fontawesome-free-5.0.6/svg-with-js/js/fontawesome.js"></script>
+        <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-regular.js"></script>
+        <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-solid.js"></script>
+        <script defer src="/fontawesome-free-5.0.6/svg-with-js/js/fa-brands.js"></script>
+        <script src="/fontawesome-free-5.0.6/svg-with-js/js/fontawesome.js"></script>
     </head>
 
-    <body>
+    <body ng-app="ngjmf" ng-controller="jmfcontroller">
+
+        <h1> {{ hello }} </h1>
+
+
         <div id="social-contact-bar">
             <div class="container">
                 <div class="row">
@@ -29,14 +35,14 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="service-box">
-                                   <div class="row">
-                                      <div class="col-md-2">
-                                        <i class="far fa-clock color-white text-left"> </i>
-                                      </div>
-                                      <div class="col-md-10 text-left">
-                                      jgigrjgodjgo
-                                      </div>
-                                   </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <i class="far fa-clock color-white text-left"> </i>
+                                        </div>
+                                        <div class="col-md-10 text-left">
+                                            jgigrjgodjgo
+                                        </div>
+                                    </div>
 
                                     <div class="col-12 padding-top-bottom service-box-color">
                                         <i class="far fa-clock color-white text-left">test row 2 </i>
@@ -84,10 +90,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="nav-content">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link " href="">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
+                                <a class="nav-link active" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Services</a>
@@ -282,6 +288,10 @@
                 </div>
             </footer>
 
+            <script src="active-changer.js"> </script>
 
             </body>
+
+
+
         </html>
