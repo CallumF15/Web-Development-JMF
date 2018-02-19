@@ -3,9 +3,9 @@
 /*global angular*/
 /*jslint white: true*/
 
-var myJmfApp = angular.module('ngjmf', []);
+var myApp = angular.module('ngjmf', []);
 
-myJmfApp.controller('jmfcontroller', function($scope){
+myApp.controller('jmfcontroller', function($scope){
     'use strict';
     $scope.hello = 'hello world!';
     });
