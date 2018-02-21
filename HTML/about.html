@@ -1,20 +1,41 @@
-<head>
-   <title>Home</title>
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/MQstyle.css">
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JMF Joiners & Builders</title>
+        <meta name="description" content="JMF... ">
+            <link rel="stylesheet" href="../Styles/sass.css">
+        <link rel="stylesheet" href="../Styles/MQstyle.css">
 
-<body>
-    <div class="container-page">
-        <div ng-include="'header.html'"> </div>
-        <div ng-view>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            test sheep
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script defer src="../fontawesome-free-5.0.6/svg-with-js/js/fa-regular.js"></script>
+        <script defer src="../fontawesome-free-5.0.6/svg-with-js/js/fa-solid.js"></script>
+        <script defer src="../fontawesome-free-5.0.6/svg-with-js/js/fa-brands.js"></script>
+        <script src="../fontawesome-free-5.0.6/svg-with-js/js/fontawesome.js"></script>
+    </head>
+    <body ng-app="ngjmf" ng-controller="jmfcontroller">
+        <div class="container-page">
+            <div ng-include="'header.html'"> </div>
+            <div ng-view>
+
+                test sheep
+
+            </div>
+            <div ng-include="'footer.html'"> </div>
         </div>
-        <div ng-include="'footer.html'"> </div>
-    </div>
-
-
-</body>
+        <script src="../JS/jmfcontroller.js"></script>
+        <script src="../JS/active-changer.js"> </script>
+    </body>
+</html>
 

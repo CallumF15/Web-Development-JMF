@@ -1,0 +1,315 @@
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/************ TABLE OF CONTENTS ***************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/************ 1) Social bar *******************/
+/************ 2) NAV BAR    *******************/
+/************ 3) Image logo *******************/
+/************ 4) Services   *******************/
+/************ 5)            *******************/
+/************ 6)            *******************/
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+
+/* Background colors */
+$ht-top: #676767; /*header top */
+$fb: #262626; /* footer bottom */
+$scb: #676767; /* 1) social contact bar  */
+
+/* text colors */
+$text: #fff;
+
+$bc: #fff; /* button color */
+
+/* font sizes */
+$h2nav: 1.5em;
+
+$fntf: 'Lato', sans-serif; /* font family */
+
+/**********************************************/
+/*  MIXINS                *********************/
+/**********************************************/
+
+/* Vertically Align Text */
+@mixin translateY($trans) {
+    top: -$trans;
+    -webkit-transform: translateY($trans);
+    -moz-transform: translateY($trans);
+    -ms-transform: translateY($trans);
+    transform: translateY($trans);
+}
+
+@mixin paddingXY($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+.vertically-align-text {
+    @include translateY (-50%);
+}
+
+.color-white{ /* used for <i> fa */
+    color: $text;
+}
+
+/**********************************************/
+/* 1) SOCIAL BAR          *********************/
+/**********************************************/
+
+#social-contact-bar{
+    position: relative;
+    background-color: $scb;
+    @include paddingXY (2%, 4%);
+    color: #fff;
+}
+
+.text-vertical{
+    display: flex;
+    align-items: center;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/* 2) NAV BAR NAVIGATION  *********************/
+/**********************************************/
+
+nav{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    ul li{
+        margin-right: 10px;
+        &:hover{
+            background-color: #9a9a9a;
+        }
+
+        &.active{
+            background-color: #9a9a9a;
+            border-right: 5px solid #fff;
+        }
+    }
+
+    h2{
+        font-size: $h2nav;
+    }
+}
+
+.navbar{
+    width: 100%;
+
+//    .navbar-nav{
+//        display: inline-block;
+//        float: none;
+//    }
+
+//    .navbar-collapse{
+//        text-align: center;
+//    }
+}
+
+.ontop {
+    position: absolute;
+    margin-top: -2%;
+    right: 0;
+    left: 0;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/* 3) IMAGE LOGO (BELOW NAV)  *****************/
+/**********************************************/
+
+#image-logo-bar{
+
+    img{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.img-box{
+    height: 350px;
+    width: 100%;
+}
+
+
+#overlay-text{
+    left: 15%;
+    top: 100px;
+    position: relative;
+    z-index: 3;
+    height: 50%;
+    width: 25%;
+    background-color: rgba( 1, 1, 1, .5);
+
+}
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/* 4) SERVICES IMAGE NAVIGATION  */
+/**********************************************/
+
+#services-navigation{
+    background-color: #dedede;
+
+    h2{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+.box-holder{
+    height: 200px;
+}
+
+.service-box-color{
+    background-color: #aaaaaa;
+}
+
+
+.service-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+    &:hover{
+        opacity: .6;
+    }
+}
+
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/* BOTTOM NAVIGATION  */
+/**********************************************/
+
+#bottom-navigation{
+    width: 100%;
+    background-color: #9f9f9f;
+
+    .button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: $text;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+
+/**********************************************/
+/* FOOTER  */
+/**********************************************/
+
+#footer-color{
+    background-color: $fb;
+    text-align: left;
+    position: relative;
+
+    p{
+        font-size: 1em;
+        color: $text;
+        position: relative;
+    }
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+/**********************************************/
+/* HTML ELEMENTS related */
+/**********************************************/
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $fntf;
+}
+
+p{
+    font-size: 1em;
+}
+
+ul li{
+    list-style:none;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
+
+
+/**********************************************/
+/* OTHER **************************************/
+/**********************************************/
+
+#bottom-navigation ul{
+    padding-left: 5px;
+}
+
+#hr-break{
+    margin: 0;
+    border-top: 2px solid rgba(0,0,0, .1);
+}
+
+#googleMap{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.padding-top-bottom{
+    @include paddingXY(10px, 10px);
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.box-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
