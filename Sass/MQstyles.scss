@@ -1,0 +1,76 @@
+/* MEDIA QUERIES CSS */
+
+/* smallest phone width */
+@media screen and (min-width: 320px) {
+    .box-holder{
+        margin-top: 10px;
+    }
+
+    .service-box{
+        width: 100%;
+    }
+
+    nav{
+        position: relative;
+
+        ul li{
+            margin-top: 10px;
+        }
+    }
+
+    .ontop{
+        position: relative;
+        margin-top: 0;
+    }
+
+    #social-contact-bar{
+        display: none;
+    }
+}
+
+/* */
+@media screen and (min-width: 480px) {
+    .container{
+
+    }
+
+    .service-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    nav{
+        position: absolute;
+        top: 0;
+
+        ul li{
+            margin-top: 0px; /* cancel 320px width */
+        }
+    }
+}
+
+
+
+
+/* Tablets and Desktops */
+@media screen and (min-width: 768px){
+    #image-holder{
+        height: 500px;
+    }
+
+    .ontop{
+        position: absolute;
+        margin-top: -2%;
+    }
+
+    #social-contact-bar{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px){
+}

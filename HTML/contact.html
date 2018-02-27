@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JMF Joiners & Builders</title>
         <meta name="description" content="JMF... ">
         <link rel="stylesheet" href="../Styles/sass.css">
         <link rel="stylesheet" href="../Styles/MQstyles.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 
@@ -30,29 +30,45 @@
             <div ng-include="'header.html'"> </div>
             <div ng-view>
 
-                <div>
-                    <div class="container sheep2 text-align-center">
-                        <div class="row">
-                            <h2> About us</h2>
-                        </div>
-                    </div>
-
-                    <img class="stretched" src="../images/3.JPG"/>
+                <div class="temp-box">
+<!--
+                    <img src="../images/room.JPG" style="width: 100%; height: 400px;
+                    background-size: 100% 100%; background-size: contain;">
+-->
                 </div>
 
-                <div class="about-text">
-                    <div class="container abcd">
-                        <div class="row abc">
-                            <p>
-                                Here at JMF, we are passionate and dedicated to the customer.
-                            </p>
+                <div class="container">
+
+                    <form action="/action_page.php" id="contactform" method="post">
+
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                         </div>
-                    </div>
+
+
+                        <div class="form-group">
+                            <label for="phone">phone:</label>
+                            <input name="phone" type="phone" class="form-control" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea name="comment" class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+
+                    </form>
+
+
                 </div>
 
             </div>
             <div ng-include="'footer.html'"> </div>
         </div>
+
+        <script src="../JS/form-validation.js"> </script>
         <script src="../JS/jmfcontroller.js"></script>
         <script src="../JS/active-changer.js"> </script>
     </body>
