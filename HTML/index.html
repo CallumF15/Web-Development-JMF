@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>JMF Joiners & Builders</title>
-        <meta name="description" content="JMF... ">
+        <meta name="description" content="Building and Joinery Services">
+        <meta name="keywords" content="Construction, Joinery, Builders, Roofing">
         <link rel="stylesheet" href="../Styles/MQstyles.css">
         <link rel="stylesheet" href="../Styles/sass.css">
 
@@ -25,131 +26,31 @@
         <script src="../fontawesome-free-5.0.6/svg-with-js/js/fontawesome.js"></script>
     </head>
 
-    <body ng-app="ngjmf" ng-controller="jmfcontroller">
+    <body ng-app="ngjmf">
 
         <!--        <h2> {{ hello }} </h2>-->
 
 
         <div class="container-page">
             <div ng-include="'header.html'"> </div>
-            <div ng-view></div>
-            <!--            <div ng-include="'topsocialbar.html'"> </div> footer here -->
-        </div>
+            <div ng-view>
+                <div class="img-box">
+                    <div id="image-logo-bar">
 
-        <div class="img-box">
-            <div id="image-logo-bar">
+                        <div style="position: relative; z-index: 1;">
+                            <img src="../images/construction.JPG"/>
+                            <div id="overlay-text" >OVERLAY</div>
+                        </div>
 
-                <div style="position: relative; z-index: 1;">
-                    <img src="../images/construction.JPG"/>
-                    <div id="overlay-text" >OVERLAY</div>
+                    </div>
                 </div>
 
             </div>
-        </div>
-
-
-
-        <div id="services-navigation" class="padding-top-bottom">
-            <div class="container">
-                <h1 class="text-align-center"> SERVICES </h1>
-                <div class="row">
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/construction.JPG" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Loft Conversions</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/decking2.jpg" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Decking and Fencing</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/construction.JPG" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Conservatories</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/construction.JPG" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Conservatories</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/construction.JPG" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Fitted Kitchens</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-12 box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="service-box">
-                                    <img  src="../images/construction.JPG" alt="Construction"  height="150px" style="width: 100%;">
-
-                                    <div class="col-12 padding-top-bottom service-box-color">
-                                        <h2> Roofing</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="margin-bottom"> </div>
-        </div>
-
-        <div class="container-page">
+            <div ng-include="'services.html'"></div>
             <div ng-include="'footer.html'"> </div>
-            <div ng-view></div>
         </div>
 
 
-        <script src="../JS/active-changer.js"> </script>
         <script src="../JS/jmfcontroller.js"></script>
     </body>
 </html>

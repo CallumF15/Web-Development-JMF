@@ -50,6 +50,10 @@
         ul li{
             margin-top: 0px; /* cancel 320px width */
         }
+
+        h2{
+            font-size: 1.2em;
+        }
     }
 }
 
@@ -58,6 +62,7 @@
 
 /* Tablets and Desktops */
 @media screen and (min-width: 768px){
+
     #image-holder{
         height: 500px;
     }
@@ -70,7 +75,14 @@
     #social-contact-bar{
         display: block;
     }
+
+
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 992){
+    nav{
+        h2{
+            font-size: 1.5em;
+        }
+    }
 }

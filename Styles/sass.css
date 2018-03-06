@@ -69,12 +69,12 @@ nav {
     nav ul li:hover {
       background-color: #9a9a9a; }
     nav ul li a {
-      font-size: 1em; }
+      font-size: 1em;
+      white-space: nowrap;
+      overflow: hidden; }
     nav ul li.active {
       background-color: #9a9a9a;
       border-right: 5px solid #fff; }
-  nav h2 {
-    font-size: 1.5em; }
 
 .navbar {
   width: 100%; }
@@ -190,14 +190,17 @@ nav {
 /**********************************************/
 .about-text {
   background-color: #e2e2e2;
-  height: 400px; }
+  height: 400px;
+  padding-top: 100px; }
 
 .abcd {
   background-color: #c4c4c4; }
 
 .abc {
   padding-top: 20px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  padding-left: 20%;
+  padding-right: 20%; }
 
 .temp-box {
   max-width: 100% !important;
@@ -210,10 +213,22 @@ nav {
   margin-top: 10%; }
 
 img.stretched {
-  max-height: 500px;
+  max-height: 400px;
   min-height: 200px;
   width: 100%; }
 
+/**********************************************/
+/* Contact page related */
+/**********************************************/
+#cp-color {
+  background-color: #f3f3f3; }
+
+#cp-box {
+  background-color: #e2e2e2; }
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
 /**********************************************/
 /* HTML ELEMENTS related */
 /**********************************************/
@@ -235,23 +250,12 @@ ul li {
 /**********************************************/
 /* OTHER **************************************/
 /**********************************************/
-#hr-break {
-  margin: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1); }
-
 #googleMap {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(175, 175, 175, 0.19);
   text-align: center; }
 
 .margin-top {
   margin-top: 20px; }
-
-.margin-bottom {
-  margin-bottom: 20px; }
-
-.padding-top-bottom {
-  padding-top: 10px;
-  padding-bottom: 10px; }
 
 .text-align-center {
   text-align: center; }

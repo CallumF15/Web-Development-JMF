@@ -30,7 +30,9 @@
     top: 0; }
     nav ul li {
       margin-top: 0px;
-      /* cancel 320px width */ } }
+      /* cancel 320px width */ }
+    nav h2 {
+      font-size: 1.2em; } }
 /* Tablets and Desktops */
 @media screen and (min-width: 768px) {
   #image-holder {
@@ -42,5 +44,8 @@
 
   #social-contact-bar {
     display: block; } }
+@media screen and (min-width: 992) {
+  nav h2 {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=MQstyles.css.map */

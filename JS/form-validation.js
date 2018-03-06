@@ -9,16 +9,17 @@ $.validator.setDefaults({
     errorClass: "help-block",
     highlight: function(element) {
         'use strict';
-
-        $(element).parent().children(':nth-child(2)').is('.is-valid, .is-invalid')  ?
-            $(element).parent().children(':nth-child(2)').removeClass('is-valid').addClass('is-invalid') :
-        $(element).parent().children(':nth-child(2)').addClass('is-invalid');
+        var child = ':nth-child(1)';
+        $(element).parent().children(child).is('.is-valid, .is-invalid')  ?
+            $(element).parent().children(child).removeClass('is-valid').addClass('is-invalid') :
+        $(element).parent().children(child).addClass('is-invalid');
     },
     unhighlight: function(element) {
         'use strict';
-        $(element).parent().children(':nth-child(2)').is('.is-valid, .is-invalid')  ?
-            $(element).parent().children(':nth-child(2)').removeClass('is-invalid').addClass('is-valid') :
-        $(element).parent().children(':nth-child(2)').addClass('is-valid');
+        var child = ':nth-child(1)';
+        $(element).parent().children(child).is('.is-valid, .is-invalid')  ?
+            $(element).parent().children(child).removeClass('is-invalid').addClass('is-valid') :
+        $(element).parent().children(child).addClass('is-valid');
     },
     errorPlacement: function (error, element) {
         'use strict';

@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JMF Joiners & Builders</title>
-        <meta name="description" content="JMF... ">
+        <meta name="description" content="JMF Builders and Joiners are a construction company">
         <link rel="stylesheet" href="../Styles/sass.css">
         <link rel="stylesheet" href="../Styles/MQstyles.css">
+        <meta name="keywords" content="Conservatories, Roof, Floor, Fence">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -24,6 +25,8 @@
         <script defer src="../fontawesome-free-5.0.6/svg-with-js/js/fa-solid.js"></script>
         <script defer src="../fontawesome-free-5.0.6/svg-with-js/js/fa-brands.js"></script>
         <script src="../fontawesome-free-5.0.6/svg-with-js/js/fontawesome.js"></script>
+
+
     </head>
     <body ng-app="ngjmf">
         <div class="container-page">
@@ -37,16 +40,21 @@
                 <div class="about-text">
                     <div class="container abcd">
                         <div class="row abc">
-                            <div class="col-12 text-center">
-                                <h2> About us</h2>
+                            <div ng-controller="AdminController" class="col-12">
+                                <ul>
+                                    <li ng-repeat="item in items">{{item}}</li>
+
+                                </ul>
                             </div>
                             <div class="col-12 text-center">
-                                <p>
-                                    JMF Builders & Joiners are a family run business with over 30 years’ experience in the industry. We provide in all aspects of joinery and building, from conservatories to extensions we pride ourselves in our attention to delivering the highest quality to the customer.
-                                </p>
+
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div id="myDiv">
+                    <img class="stretched" src="../images/fence.jpg"/>
                 </div>
 
             </div>
@@ -54,9 +62,9 @@
             <div ng-include="'footer.html'"> </div>
         </div>
 
-        <script src="../JS/changeContainer.js"></script>
-        <script src="../JS/jmfcontroller.js"></script>
-        <script src="../JS/active-changer.js"> </script>
+       <script src="../JS/changeContainer.js"></script>
+        <script src="../JS/service-list.js"></script>
+        <script src="../JS/scrolltodiv.js"></script>
     </body>
 </html>
 
