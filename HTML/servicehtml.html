@@ -30,41 +30,108 @@
     </head>
     <body ng-app="ngjmf">
         <div class="container-page">
+
             <div ng-include="'header.html'"> </div>
             <div ng-view>
+
+
+
+                <div class="services-side-bar">
+
+
+                    <div id="services-side-nav">
+                        <ul>
+                            <li>
+                                <a>Extensions </a>
+                            </li>
+                            <li>
+                                Decking
+                            </li>
+                            <li>
+                                Fences
+                            </li>
+                            <li>
+                                Conservatories
+                            </li>
+
+                            <li>
+                                Fitted Kitchens
+                            </li>
+                            <li>
+                                Roofing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div>
                     <img class="stretched" src="../images/3.JPG"/>
                 </div>
 
-                <div class="about-text">
-                    <div class="container abcd">
-                        <div class="row abc">
-                            <div ng-controller="AdminController" class="col-12">
-                                <ul>
-                                    <li ng-repeat="item in items">{{item}}</li>
-
-                                </ul>
+                <div class="estimate-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-2 col-6 text-left">
+                                <div class="row h-100">
+                                    <div class="col-3 my-auto text-right">
+                                        <i class="fa fa-phone color-white text-left" style="font-size: 3em;"> </i>
+                                    </div>
+                                    <div class="col-9" style="line-height: 5px">
+                                        <h3>REQUEST A FREE QUOTE</h3>
+                                        <p>Get answers and advice from people you want it from.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 text-center">
-
+                            <div class="col-4 my-auto">
+                                <button class="button" onclick="location.href='../HTML/contact.html'" type="button">Get a Quote</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="myDiv">
-                    <img class="stretched" src="../images/fence.jpg"/>
+                <div class="about-text">
+                    <div class="container abcd">
+                        <div class="row abc">
+                            <div class="col-12 text-center">
+                                <h2>Project Management</h2>
+                            </div>
+                            <div class="col-12 text-center">
+                                <p>
+                                    Trust in every detail. To ensure the best outcome for your project, you need people who know what they’re doing—every step of the way. Our experienced construction consultant professionals provide effective leadership, sharp attention to detail and a valued partnership you can count on throughout the life of your project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <div ng-include="'services.html'"></div>
+            <div ng-view>
+                <div id="myDiv">
+                    <img class="stretched" src="../images/fence.jpg"/>
+                </div>
+
+                <div class="about-text">
+                    <div class="container abcd">
+                        <div class="row abc">
+                            <div class="col-12 text-center">
+                                <h2> Fences</h2>
+                            </div>
+                            <div class="col-12 text-center">
+                                <p>
+                                    JMF Builders & Joiners are a family run business with over 30 years’ experience in the industry. We provide in all aspects of joinery and building, from conservatories to extensions we pride ourselves in our attention to delivering the highest quality to the customer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div ng-include="'footer.html'"> </div>
         </div>
 
-       <script src="../JS/changeContainer.js"></script>
+        <script src="../JS/changeContainer.js"></script>
         <script src="../JS/service-list.js"></script>
-        <script src="../JS/scrolltodiv.js"></script>
+
     </body>
 </html>
 

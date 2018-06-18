@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>JMF Joiners & Builders</title>
         <meta name="description" content="JMF... ">
-         <meta name="keywords" content="Contact">
+        <meta name="keywords" content="Contact">
 
         <link rel="stylesheet" href="../Styles/sass.css">
         <link rel="stylesheet" href="../Styles/MQstyles.css">
@@ -33,36 +33,134 @@
                     <img class="stretched" src="../images/3.JPG"/>
                 </div>
 
-
                 <div class="pt-5 pb-5" id="cp-color">
-                    <div class="container pb-5" id="cp-box">
+                    <div class="container" id="cp-box">
+                        <div class="row pb-5 pt-5 pl-5 pr-5">
 
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h2> About us</h2>
+
+                            <div class="col-12 col-md-7">
+
+                                <span style="text-align: left;"><strong style="font-weight: 900;">Send Us</strong> A Message</span>
+
+
+                                <form action="/action_page.php" id="contactform" method="post">
+
+                                    <div class="form-group">
+                                        <label>Name <sup>*</sup></label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label>Phone <sup>*</sup></label>
+                                        <input name="phone" type="phone" class="form-control" id="phone"
+                                               placeholder="Enter your phone number">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Message<sup>*</sup></label>
+                                        <textarea name="comment" class="form-control" rows="5" id="comment"
+                                                  placeholder="Enter your message"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+
+                            <div class="col-12 col-md-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span style="text-align: left;"><strong style="font-weight: 900;">Our</strong> Contacts</span>
+
+                                        <p>
+                                            We are here to help – Fill in our form and one of our team will follow up on your request within 24 hours.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-2 col-md-2 text-vertical">
+                                            <i class="far fa-clock color-white text-left" style="font-size: 2em;"> </i>
+                                        </div>
+
+                                        <div class="col-10 col-md-10">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2> Time</h2>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    Monday to Friday
+                                                    <br>
+                                                    9 am to 5pm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-2 col-md-2 text-vertical">
+                                            <i class="fa fa-home color-white text-left" style="font-size: 2em;"> </i>
+                                        </div>
+
+                                        <div class="col-10 col-md-10">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2> Address</h2>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    Glasgow, Scotland
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-2 col-md-2 text-vertical">
+                                            <i class="fa fa-phone color-white text-left" style="font-size: 2em;"> </i>
+                                        </div>
+
+                                        <div class="col-10 col-md-10">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2> Phone</h2>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    07 941 292 84
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 col-sm-2 col-md-2 text-vertical">
+                                            <i class="far fa-envelope color-white text-left" style="font-size: 2em;"> </i>
+                                        </div>
+
+                                        <div class="col-10 col-md-10">
+                                            <div class="row">
+                                                <div class="col-12 text-left">
+                                                    <h2> Email</h2>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    info@building.co.uk
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <form action="/action_page.php" id="contactform" method="post">
-
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                            </div>
-
-
-                            <div class="form-group">
-                                <input name="phone" type="phone" class="form-control" id="phone"
-                                       placeholder="Enter your phone number">
-
-                            </div>
-
-                            <div class="form-group">
-                                <textarea name="comment" class="form-control" rows="5" id="comment"
-                                          placeholder="Enter your message"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
                     </div>
                 </div>
             </div>

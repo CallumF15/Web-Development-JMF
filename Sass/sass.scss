@@ -21,17 +21,41 @@
 /* Background colors */
 $ht-top: #676767; /*header top */
 $fb: #262626; /* footer bottom */
-$scb: #676767; /* 1) social contact bar  */
+$scb: #f5f5f5; /* 1) social contact bar  */
 
 /* text colors */
-$text: #fff;
+$text: #717171; /* fa */
 
-$bc: #fff; /* button color */
+$bc: #F3E335; /* button color */
 
 /* font sizes */
 $h2nav: 1.5em;
 
 $fntf: 'Lato', sans-serif; /* font family */
+
+/**********************************************/
+/* HTML ELEMENTS related */
+/**********************************************/
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $fntf !important;
+    color: #000;
+}
+
+p{
+    font-size: 1em;
+}
+
+ul li{
+    list-style:none;
+}
+
+/**********************************************/
+/**********************************************/
+/**********************************************/
 
 /**********************************************/
 /*  MIXINS                *********************/
@@ -59,8 +83,19 @@ $fntf: 'Lato', sans-serif; /* font family */
     @include translateY (-50%);
 }
 
-.color-white{ /* used for <i> fa */
+.vertically-align-text2 {
+    @include translateY (50%);
+}
+
+.color-fa{ /* used for <i> fa */
     color: $text;
+}
+
+.vertical-div{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: column;
 }
 
 /**********************************************/
@@ -71,12 +106,16 @@ $fntf: 'Lato', sans-serif; /* font family */
     position: relative;
     background-color: $scb;
     @include paddingXY (2%, 4%);
-    color: #fff;
 }
 
 .text-vertical{
     display: flex;
     align-items: center;
+}
+
+.img-testy{
+    height: 70px;
+    width: 100%;
 }
 
 /**********************************************/
@@ -92,10 +131,16 @@ $fntf: 'Lato', sans-serif; /* font family */
 nav{
     z-index: 2;
 
+    .navbar-brand{
+        h1{
+            font-size: 2em;
+        }
+    }
+
     ul li{
         margin-right: 10px;
         &:hover{
-            background-color: #9a9a9a;
+            background-color: #e0e0e0;
         }
 
         a{
@@ -105,8 +150,8 @@ nav{
         }
 
         &.active{
-            background-color: #9a9a9a;
-            border-right: 5px solid #fff;
+            background-color: #e0e0e0;
+            border-right: 5px solid #fff646;
         }
     }
 }
@@ -143,13 +188,17 @@ nav{
         position: absolute;
         z-index: 2;
         width: 100%;
-        height: 350px;
+        height: 500px;
     }
 }
 
 .img-box{
-    height: 350px;
+    height: 500px;
     width: 100%;
+}
+
+#nav-fix-spacing{
+    margin-top: 152px;
 }
 
 
@@ -163,6 +212,13 @@ nav{
     background-color: rgba( 1, 1, 1, .5);
 
 }
+
+.estimate-box{
+    background-color: #e6e6e6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
 /**********************************************/
 /**********************************************/
 /**********************************************/
@@ -172,7 +228,7 @@ nav{
 /**********************************************/
 
 #services-navigation{
-    background-color: #dedede;
+    background-color: #f0f0f0;
 
     h2{
         font-size: 1em;
@@ -185,7 +241,7 @@ nav{
 }
 
 .service-box-color{
-    background-color: #aaaaaa;
+    background-color: #d7d7d7;
 }
 
 
@@ -198,6 +254,33 @@ nav{
     }
 }
 
+.services-side-bar{
+    position: fixed;
+    width: 10%;
+    height: 40%;
+    margin-top: 100px;
+    z-index: 1;
+
+    #services-side-nav{
+        padding: 10px;
+        background-color: white;
+        border-left: 10px solid rgb(114, 114, 114);
+        box-shadow: 1px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                padding-top: 2px;
+                border-bottom: 1px solid rgba(24, 24, 126, 0.2);
+
+                &:hover{
+                    background-color: pink;
+                }
+            }
+        }
+    }
+}
 
 /**********************************************/
 /**********************************************/
@@ -209,18 +292,7 @@ nav{
 
 #bottom-navigation{
     width: 100%;
-    background-color: #9f9f9f;
-
-    .button{
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: $text;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
+    background-color: #e6e6e6;
 
     h2{
         color: #464646;
@@ -235,8 +307,8 @@ nav{
                 padding: 5px;
                 padding-left: 10px;
                 padding-right: 10px;
-                border-radius: 10px;
-                color: $text;
+                border-radius: 3px;
+                color: #000;
                 text-decoration: none;
 
                 &.active{
@@ -265,7 +337,7 @@ nav{
 
     p{
         font-size: 1em;
-        color: $text;
+        color: #fff;
         position: relative;
     }
 }
@@ -279,18 +351,18 @@ nav{
 /**********************************************/
 
 .about-text{
-    background-color: #e2e2e2;
+    background-color: #f6f6f6;
     height: 400px;
-    padding-top: 100px;
+    padding: 50px 0px 50px 0px;
 }
 
 .abcd{
-    background-color: #c4c4c4;
+    background-color: #fbfbfb;
 }
 
 .abc{
-    padding-top: 20px;
-    padding-bottom: 80px;
+    //    padding-top: 20px;
+    //    padding-bottom: 80px;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -313,6 +385,21 @@ img.stretched {
     width:100%;
 }
 
+.dream-home{
+    height: 300px;
+    background-image: url('../images/dream2.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cont-color{
+    height: 100%;
+    background-color: rgba(48, 49, 51, .8);
+}
+
 /**********************************************/
 /* Contact page related */
 /**********************************************/
@@ -323,44 +410,33 @@ img.stretched {
 
 #cp-box{
     background-color: #e2e2e2;
+    box-shadow:0 7px 25px 1px rgba(0,0,0,0.08);
 }
 
-
-/**********************************************/
-/**********************************************/
-/**********************************************/
-
-/**********************************************/
-/* HTML ELEMENTS related */
-/**********************************************/
-
-body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: $fntf !important;
-}
-
-p{
-    font-size: 1em;
-}
-
-ul li{
-    list-style:none;
+span{
+    font-size: 2em;
 }
 
 /**********************************************/
 /**********************************************/
 /**********************************************/
+
+
 
 
 /**********************************************/
 /* OTHER **************************************/
 /**********************************************/
 
-#googleMap{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(175, 175, 175, 0.19);
+.button{
+    background-color: $bc; /* Green */
+    border: none;
+    //    color: $text;
+    padding: 10px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .margin-top{
@@ -377,5 +453,5 @@ ul li{
 }
 
 .box-shadow{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
