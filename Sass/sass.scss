@@ -1,22 +1,22 @@
 /**********************************************/
 /**********************************************/
-/**********************************************/
-/**********************************************/
 /************ TABLE OF CONTENTS ***************/
-/**********************************************/
-/**********************************************/
 /**********************************************/
 /**********************************************/
 /************ 1) Social bar *******************/
 /************ 2) NAV BAR    *******************/
 /************ 3) Image logo *******************/
 /************ 4) Services   *******************/
-/************ 5)            *******************/
-/************ 6)            *******************/
-/**********************************************/
+/************ 5) Bottom Nav *******************/
+/************ 6) Footer     *******************/
+/************ 6)      *******************/
 /**********************************************/
 /**********************************************/
 
+
+/**********************************************/
+/* shortcut binded colors/sizes */
+/**********************************************/
 
 /* Background colors */
 $ht-top: #676767; /*header top */
@@ -45,6 +45,10 @@ body{
     color: #000;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 p{
     font-size: 1em;
 }
@@ -56,7 +60,6 @@ ul li{
 /**********************************************/
 /**********************************************/
 /**********************************************/
-
 /**********************************************/
 /*  MIXINS                *********************/
 /**********************************************/
@@ -114,8 +117,7 @@ ul li{
 }
 
 .img-testy{
-    height: 70px;
-    width: 100%;
+    height: 100px;
 }
 
 /**********************************************/
@@ -182,23 +184,9 @@ nav{
 /* 3) IMAGE LOGO (BELOW NAV)  *****************/
 /**********************************************/
 
-#image-logo-bar{
-
-    img{
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        height: 500px;
-    }
-}
-
-.img-box{
-    height: 500px;
-    width: 100%;
-}
 
 #nav-fix-spacing{
-    margin-top: 152px;
+    margin-top: 127px;
 }
 
 
@@ -219,6 +207,7 @@ nav{
     padding-bottom: 8px;
 
 }
+
 /**********************************************/
 /**********************************************/
 /**********************************************/
@@ -256,7 +245,6 @@ nav{
 
 .services-side-bar{
     position: fixed;
-    width: 10%;
     height: 40%;
     margin-top: 100px;
     z-index: 1;
@@ -275,19 +263,51 @@ nav{
                 border-bottom: 1px solid rgba(24, 24, 126, 0.2);
 
                 &:hover{
-                    background-color: pink;
+                    background-color: #e0e0e0;
+                    padding: 2px;
                 }
             }
         }
     }
 }
 
-/**********************************************/
-/**********************************************/
-/**********************************************/
+#hider{
+    display:none;
+}
+
+.services-text{
+    background-color: #f6f6f6;
+    height: 300px;
+    padding: 0px 0px 50px 0px;
+}
+
+/*Horizontal scrolling gallery*/
+.services-gallery{
+    background-color: $scb;
+}
+
+img.box{
+    width:350px;
+    height: 150px;
+    margin: 20px 10px 0 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.scroll {
+  height: 180px;
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 0 10px #000;
+}
+/*End Horizontal scrolling gallery*/
+
 
 /**********************************************/
-/* BOTTOM NAVIGATION  */
+/**********************************************/
+/**********************************************/
+/**********************************************/
+/* 5. BOTTOM NAVIGATION  */
 /**********************************************/
 
 #bottom-navigation{
@@ -327,7 +347,7 @@ nav{
 
 
 /**********************************************/
-/* FOOTER  */
+/* 6. FOOTER  */
 /**********************************************/
 
 #footer-color{
@@ -385,15 +405,15 @@ img.stretched {
     width:100%;
 }
 
-.dream-home{
-    height: 300px;
-    background-image: url('../images/dream2.jpg');
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+//.dream-home{ may delete
+//    height: 300px;
+//    background-image: url('../images/dream2.jpg');
+//    /* Create the parallax scrolling effect */
+//    background-attachment: fixed;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//}
 
 .cont-color{
     height: 100%;
@@ -417,21 +437,24 @@ span{
     font-size: 2em;
 }
 
+.btn-color{
+    background-color: #F3E335;
+}
+
 /**********************************************/
 /**********************************************/
 /**********************************************/
-
-
-
-
 /**********************************************/
 /* OTHER **************************************/
 /**********************************************/
 
+.text-lineheight{
+    line-height: 1.2;
+}
+
 .button{
     background-color: $bc; /* Green */
     border: none;
-    //    color: $text;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -454,4 +477,18 @@ span{
 
 .box-shadow{
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+/**********************************************/
+/* BOOTSTRAP CAROUSEL CHANGES******************/
+/**********************************************/
+
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }

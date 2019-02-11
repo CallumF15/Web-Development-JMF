@@ -36,12 +36,12 @@
 
 
 
-                <div class="services-side-bar">
+                <div class="services-side-bar" id="hider">
 
 
-                    <div id="services-side-nav">
+                    <div id="services-side-nav" >
                         <ul>
-                            <li>
+                            <li class="service-extension">
                                 <a>Extensions </a>
                             </li>
                             <li>
@@ -88,47 +88,13 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="about-text">
-                    <div class="container abcd">
-                        <div class="row abc">
-                            <div class="col-12 text-center">
-                                <h2>Project Management</h2>
-                            </div>
-                            <div class="col-12 text-center">
-                                <p>
-                                    Trust in every detail. To ensure the best outcome for your project, you need people who know what they’re doing—every step of the way. Our experienced construction consultant professionals provide effective leadership, sharp attention to detail and a valued partnership you can count on throughout the life of your project.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <div ng-include="'services.html'"></div>
-            <div ng-view>
-                <div id="myDiv">
-                    <img class="stretched" src="../images/fence.jpg"/>
-                </div>
 
-                <div class="about-text">
-                    <div class="container abcd">
-                        <div class="row abc">
-                            <div class="col-12 text-center">
-                                <h2> Fences</h2>
-                            </div>
-                            <div class="col-12 text-center">
-                                <p>
-                                    JMF Builders & Joiners are a family run business with over 30 years’ experience in the industry. We provide in all aspects of joinery and building, from conservatories to extensions we pride ourselves in our attention to delivering the highest quality to the customer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div ng-include="'services.html'" id="scroll-to"></div>
             <div ng-include="'footer.html'"> </div>
         </div>
 
+        <script src="../JS/scroll-nav.js"></script>
         <script src="../JS/changeContainer.js"></script>
         <script src="../JS/service-list.js"></script>
 

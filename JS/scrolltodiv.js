@@ -5,5 +5,13 @@
 /*exported scroll */
 
 $( "#services-navigation .service-box" ).click(function() {
-     document.getElementById('myDiv').scrollIntoView();
+
+    var element = document.getElementById('myDiv');
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+});
+
+
+$( ".services-side-bar .service-extension" ).click(function() {
+    document.getElementById('myDiv').scrollIntoView();
 });
